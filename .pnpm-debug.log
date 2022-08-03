@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: a",
+      "code": "ENOENT",
+      "stack": "Error: not found: a\n    at getNotFoundError (/Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:41759:51)\n    at Function.whichSync [as sync] (/Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:41836:13)\n    at getCommandAbsolutePathSync (/Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:43401:44)\n    at default_1 (/Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:43410:32)\n    at /Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:178873:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "/Users/florian/Learn/typo3-vite-demo",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: a",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: a\n    at getNotFoundError (/Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:41759:51)\n    at Function.whichSync [as sync] (/Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:41836:13)\n    at getCommandAbsolutePathSync (/Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:43401:44)\n    at default_1 (/Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:43410:32)\n    at /Users/florian/Library/pnpm/global/5/.pnpm/pnpm@7.2.1/node_modules/pnpm/dist/pnpm.cjs:178873:39"
+    }
+  }
+}

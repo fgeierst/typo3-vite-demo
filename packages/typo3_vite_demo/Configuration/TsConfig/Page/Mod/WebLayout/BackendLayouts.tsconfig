@@ -1,0 +1,4 @@
+#
+# BACKENDLAYOUTS
+#
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:typo3_vite_demo/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="tsconfig">

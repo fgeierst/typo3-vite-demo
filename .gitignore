@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+.idea
+nbproject
+/var/*
+!/var/labels
+/vendor
+/public/*
+!/public/.htaccess
+!/public/typo3conf
+/public/typo3conf/*
+!/public/typo3conf/LocalConfiguration.php
+!/public/typo3conf/AdditionalConfiguration.php
+
+# Exclude all extensions but locally added (all other extensions are loaded by composer)
+/public/typo3conf/ext/*
