@@ -1,10 +1,11 @@
 export default {
   build: {
-    lib: {
-        entry: 'packages/typo3_vite_demo/Resources/Private/JavaScript/main.js', 
-        name: 'Main',
-        fileName: (format) => `vite.${format}.js`
-      },
-      outDir: 'packages/typo3_vite_demo/Resources/Public/JavaScript/', 
+    // generate manifest.json in outDir
+    manifest: true,
+    rollupOptions: {
+      // overwrite default .html entry
+      input: 'packages/typo3_vite_demo/Resources/Private/JavaScript/main.js'
+    },
+    outDir: 'packages/typo3_vite_demo/Resources/Public/JavaScript/',
   }
 }
