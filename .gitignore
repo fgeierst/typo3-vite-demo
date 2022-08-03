@@ -14,3 +14,5 @@ nbproject
 
 # Exclude all extensions but locally added (all other extensions are loaded by composer)
 /public/typo3conf/ext/*
+
+packages/typo3_vite_demo/Resources/Public/JavaScript/

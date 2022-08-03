@@ -1,4 +1,5 @@
 export default {
+  publicDir: false, // disable copy `public/` to outDir
   build: {
     // generate manifest.json in outDir
     manifest: true,
