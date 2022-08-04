@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e38d3aed3f17f9ee095a3ffe43711bd",
+    "content-hash": "c7c1de82de2fb0bc1e83505cf3687a15",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -833,6 +833,41 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.15.4"
             },
             "time": "2022-02-21T09:13:59+00:00"
+        },
+        {
+            "name": "florian-geierstanger/typo3-vite-demo",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "./packages/typo3_vite_demo",
+                "reference": "42f88323fe37a486f4afccea5dfd4f96b1ea708f"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5",
+                "typo3/cms-fluid-styled-content": "^11.5",
+                "typo3/cms-rte-ckeditor": "^11.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "typo3_vite_demo"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FlorianGeierstanger\\Typo3ViteDemo\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "homepage": "https://florian.geierstanger.org/",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "guzzlehttp/guzzle",

@@ -1,5 +1,6 @@
 {
     "name": "florian-geierstanger/typo3-vite-demo",
+    "version": "0.0.1",
     "type": "typo3-cms-extension",
     "description": "",
     "homepage": "https://florian.geierstanger.org/",

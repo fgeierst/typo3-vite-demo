@@ -19,6 +19,7 @@
 		}
 	],
 	"require": {
+		"florian-geierstanger/typo3-vite-demo": "^0.0.1",
 		"helhum/typo3-console": "^7.0.2",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
@@ -43,8 +44,7 @@
 		"typo3/cms-sys-note": "^11.5.0",
 		"typo3/cms-t3editor": "^11.5.0",
 		"typo3/cms-tstemplate": "^11.5.0",
-		"typo3/cms-viewpage": "^11.5.0",
-		"florian-geierstanger/typo3-vite-demo": "dev-main"
+		"typo3/cms-viewpage": "^11.5.0"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [
