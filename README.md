@@ -18,9 +18,8 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 	cd typo3-vite-demo
 	ddev start
 	ddev composer install
-	pnpm install
 
 
-## Start local ViteJS dev server
+## Control local ViteJS dev server
 
-	pnpm dev
+	ddev vite-serve start|stop
