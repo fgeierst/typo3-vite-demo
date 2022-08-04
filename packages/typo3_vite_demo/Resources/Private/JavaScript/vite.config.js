@@ -5,7 +5,7 @@ export default {
     manifest: true,
     rollupOptions: {
       // overwrite default .html entry
-      input: 'packages/typo3_vite_demo/Resources/Private/JavaScript/main.js'
+      input: 'packages/typo3_vite_demo/Resources/Private/JavaScript/src/main.js'
     },
     outDir: 'packages/typo3_vite_demo/Resources/Public/JavaScript/',
   }
