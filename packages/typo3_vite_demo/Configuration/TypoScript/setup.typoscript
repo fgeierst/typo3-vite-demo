@@ -160,7 +160,14 @@ page {
     }
 
     includeJSFooter {
-        typo3_vite_demo_scripts = EXT:typo3_vite_demo/Resources/Public/JavaScript/Dist/scripts.js
+        #typo3_vite_demo_scripts = EXT:typo3_vite_demo/Resources/Public/JavaScript/Dist/scripts.js
+    }
+
+    headerData {
+        10 = TEXT
+        10.value = <script type="module" src="http://localhost:5173/@vite/client"></script>
+        20 = TEXT
+        20.value = <script type="module" src="http://localhost:5173/main.js"></script>
     }
 }
 
