@@ -4,4 +4,5 @@
 ## Usage: pnpm [flags] [args]
 ## Example: "ddev pnpm i"
 
+cd packages/typo3_vite_demo/Resources/Private/JavaScript/
 pnpm $@

@@ -8,7 +8,7 @@ export default {
     manifest: true,
     rollupOptions: {
       // overwrite default .html entry
-      input: 'packages/typo3_vite_demo/Resources/Private/JavaScript/main.js'
+      input: 'main.js',
     },
     outDir: '../../Public/JavaScript/',
   }
