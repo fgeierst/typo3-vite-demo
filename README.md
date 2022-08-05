@@ -20,11 +20,11 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 	ddev composer install
 
 
-## Control local ViteJS dev server
+## Control Vite dev server
 
 	ddev vite-serve start|stop
 
 
 ## Build JS and CSS
 
-	ddev exec node packages/typo3_vite_demo/Resources/Private/JavaScript/node_modules/vite/bin/vite.js build packages/typo3_vite_demo/Resources/Private/JavaScript/
+	ddev pnpm build
