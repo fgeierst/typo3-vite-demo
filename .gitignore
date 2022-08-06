@@ -11,6 +11,7 @@ nbproject
 /public/typo3conf/*
 !/public/typo3conf/LocalConfiguration.php
 !/public/typo3conf/AdditionalConfiguration.php
+!/.ddev/db_snapshots/*
 
 # Exclude all extensions but locally added (all other extensions are loaded by composer)
 /public/typo3conf/ext/*
