@@ -11,20 +11,22 @@ final class InsertViteAssets {
   public function getScriptTags(): string
   {
 
-    // Read the manifest file
-    $json = file_get_contents(
+    // Read the manifest file and decode JSON
+    $file = file_get_contents(
       \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName('EXT:typo3_vite_demo/Resources/Public/JavaScript/manifest.json')
     );
-      
-    // Decode the JSON 
-    $json_data = json_decode($json,true);
+    $manifest = json_decode($file, true);
 
-    $scriptSrc = '/typo3conf/ext/typo3_vite_demo/Resources/Public/JavaScript/'.$json_data['main.js']['file'];
+    // Build urls
+    $path = '/typo3conf/ext/typo3_vite_demo/Resources/Public/JavaScript/';
+    $scriptSrc = $path . $manifest['main.js']['file'];
+    $stylesheetHref = $path . $manifest['main.js']['css'][0];
     
-    // Return script tag
-    $content = '<!-- Vite JavaScript -->'; 
+    // Return script and link tags
+    $content = '<!-- Vite Assets -->'; 
     $content .= '<script src="' . $scriptSrc . '"></script>';
-
+    $content .= '<link rel="stylesheet" href="' . $stylesheetHref . '">';
+    
     return $content;
 
   }

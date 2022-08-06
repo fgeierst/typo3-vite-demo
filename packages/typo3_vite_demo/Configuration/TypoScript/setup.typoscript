@@ -164,6 +164,7 @@ page {
     }
 }
 
+# In development mode, JS and CSS are injected from the Vite dev server.
 [applicationContext == "Development/Local"]
     page.headerData {
         10 = TEXT
@@ -173,18 +174,14 @@ page {
     }
 [END]
 
+# In production mode read the hashed JS and CSS file names from Vite generated manifest.json.
 [applicationContext == "Production/Staging"]
     page.headerData { 
-        # @todo: In production mode read the hashed js and css file paths from packages/typo3_vite_demo/Resources/Public/JavaScript/manifest.json.
         10 = USER_INT
         10 {
             userFunc = FlorianGeierstanger\Typo3ViteDemo\UserFunctions\InsertViteAssets->getScriptTags
         }
     }
-
-    // page.includeCSS {
-    //     vite_styles = 
-    // }
 [END]
 
 ################
