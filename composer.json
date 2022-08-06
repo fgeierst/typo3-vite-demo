@@ -53,5 +53,11 @@
 		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
+	},
+	"autoload": {
+		"psr-4": {
+			"FlorianGeierstanger\\Typo3ViteDemo\\UserFunctions\\": "Classes/UserFunctions/"
+		}
 	}
 }
+
