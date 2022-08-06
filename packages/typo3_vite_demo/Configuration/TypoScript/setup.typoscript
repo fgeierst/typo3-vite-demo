@@ -178,9 +178,13 @@ page {
         # @todo: In production mode read the hashed js and css file paths from packages/typo3_vite_demo/Resources/Public/JavaScript/manifest.json.
         10 = USER_INT
         10 {
-            userFunc = FlorianGeierstanger\Typo3ViteDemo\UserFunctions\InsertViteAssets->printString
+            userFunc = FlorianGeierstanger\Typo3ViteDemo\UserFunctions\InsertViteAssets->getScriptTags
         }
     }
+
+    // page.includeCSS {
+    //     vite_styles = 
+    // }
 [END]
 
 ################
