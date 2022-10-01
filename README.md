@@ -20,7 +20,10 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 	ddev composer install
 	ddev snapshot restore
 	
-Login via [https://typo3-vite-demo.ddev.site/typo3](https://typo3-vite-demo.ddev.site/typo3)  
+Login via [https://typo3-vite-demo.ddev.site/typo3](https://typo3-vite-demo.ddev.site/typo3) using these credentials:
+
+- Username: `admin`
+- Password: `oZim4R7eLEWzzL`
 
 
 ## Control Vite dev server
