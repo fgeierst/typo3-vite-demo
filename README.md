@@ -2,9 +2,11 @@
 
 Integrate ViteJS build pipeline and development server with TYPO3.
 
+- https://florian.geierstanger.org/blog/typo3-vite
 - https://github.com/torenware/ddev-viteserve
 - https://vitejs.dev/guide/backend-integration.html
 
+[Open with Gitpod](https://gitpod.io/#https://github.com/fgeierst/typo3-11-tailwind-demo/)
 
 ## Prerequisites
 
