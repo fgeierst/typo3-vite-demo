@@ -21,6 +21,9 @@ ports:
   # Used by ddev - local db clients
   - port: 3306
     onOpen: ignore
+  # Used by Vite
+  - port: 5173
+    onOpen: ignore
   # Used by projector
   - port: 6942
     onOpen: ignore

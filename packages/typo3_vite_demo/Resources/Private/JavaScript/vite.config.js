@@ -1,6 +1,6 @@
 export default {
   server: {
-    origin: 'https://typo3-vite-demo.ddev.site'
+    origin: '/'
   },
   publicDir: false, // disable copy `public/` to outDir
   build: {

@@ -1,4 +1,4 @@
-base: 'https://typo3-vite-demo.ddev.site/'
+base: /
 errorHandling: {  }
 languages:
   -
