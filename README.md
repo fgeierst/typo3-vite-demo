@@ -6,7 +6,6 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 - https://github.com/torenware/ddev-viteserve
 - https://vitejs.dev/guide/backend-integration.html
 
-[Open with Gitpod](https://gitpod.io/#https://github.com/fgeierst/typo3-vite-demo)
 
 ## Prerequisites
 
@@ -21,6 +20,7 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 	ddev start
 	ddev composer install
 	ddev snapshot restore
+	ddev pnpm install
 	
 Login via [https://typo3-vite-demo.ddev.site/typo3](https://typo3-vite-demo.ddev.site/typo3) using these credentials:
 
