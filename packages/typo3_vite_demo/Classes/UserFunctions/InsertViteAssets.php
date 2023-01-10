@@ -15,17 +15,25 @@ final class InsertViteAssets {
     $file = file_get_contents(
       \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName('EXT:typo3_vite_demo/Resources/Public/JavaScript/manifest.json')
     );
+    
     $manifest = json_decode($file, true);
 
     // Build urls
     $path = '/typo3conf/ext/typo3_vite_demo/Resources/Public/JavaScript/';
     $scriptSrc = $path . $manifest['main.js']['file'];
-    $stylesheetHref = $path . $manifest['main.js']['css'][0];
+    $stylesheetFiles = $manifest['main.js']['css'];
     
     // Return script and link tags
     $content = '<!-- Vite Assets -->'; 
     $content .= '<script src="' . $scriptSrc . '"></script>';
-    $content .= '<link rel="stylesheet" href="' . $stylesheetHref . '">';
+    
+    // check if there are any stylesheets imported by Vite
+    if (is_array($stylesheetFiles)) {
+        foreach ($stylesheetFiles as $stylesheetFile) {
+            $stylesheetPath = $path . $stylesheetFile;
+            $content .= '<link rel="stylesheet" href="' . $stylesheetPath . '">';
+        }
+    }
     
     return $content;
 
