@@ -11,5 +11,8 @@ export default {
       input: 'main.js',
     },
     outDir: '../../Public/JavaScript/',
+  }.
+  css: {
+    devSourcemap: true,
   }
 }
