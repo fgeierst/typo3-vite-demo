@@ -168,9 +168,9 @@ page {
 [applicationContext == "Development/Local"]
     page.headerData {
         10 = TEXT
-        10.value = <script type="module" src=":5173/@vite/client"></script>
+        10.value = <script type="module" src="https://typo3-vite-demo.ddev.site:5173/@vite/client"></script>
         20 = TEXT
-        20.value = <script type="module" src=":5173/main.js"></script>
+        20.value = <script type="module" src="https://typo3-vite-demo.ddev.site:5173/main.js"></script>
     }
 [END]
 
