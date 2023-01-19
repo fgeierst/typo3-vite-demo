@@ -36,3 +36,5 @@ Login via [https://typo3-vite-demo.ddev.site/typo3](https://typo3-vite-demo.ddev
 ## Build JS and CSS
 
 	ddev pnpm build
+
+Set TYPO3_CONTEXT to 'Production/Staging' to test the production build of JS and CSS. See [setup.typoscript](https://github.com/fgeierst/typo3-vite-demo/blob/master/packages/typo3_vite_demo/Configuration/TypoScript/setup.typoscript#L177).
