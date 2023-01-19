@@ -1,6 +1,6 @@
 export default {
   server: {
-    origin: '/'
+    origin: ''
   },
   publicDir: false, // disable copy `public/` to outDir
   build: {
