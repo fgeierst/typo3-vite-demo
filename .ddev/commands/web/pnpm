@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Run pnpm inside the web container
+## Usage: pnpm [flags] [args]
+## Example: "ddev pnpm i"
+
+pnpm $@

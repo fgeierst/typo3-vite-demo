@@ -8,7 +8,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.57.1",
     "vite": "^4.0.4",
-    "sass": "^1.57.1"
+    "vite-plugin-full-reload": "^1.0.5"
   }
 }

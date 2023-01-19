@@ -3,10 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   sass: ^1.57.1
   vite: ^4.0.4
+  vite-plugin-full-reload: ^1.0.5
 
 devDependencies:
   sass: 1.57.1
   vite: 4.0.4_sass@1.57.1
+  vite-plugin-full-reload: 1.0.5_vite@4.0.4
 
 packages:
 
@@ -422,6 +424,16 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /vite-plugin-full-reload/1.0.5_vite@4.0.4:
+    resolution: {integrity: sha512-kVZFDFWr0DxiHn6MuDVTQf7gnWIdETGlZh0hvTiMXzRN80vgF4PKbONSq8U1d0WtHsKaFODTQgJeakLacoPZEQ==}
+    peerDependencies:
+      vite: ^2 || ^3 || ^4
+    dependencies:
+      picocolors: 1.0.0
+      picomatch: 2.3.1
+      vite: 4.0.4_sass@1.57.1
     dev: true
 
   /vite/4.0.4_sass@1.57.1:

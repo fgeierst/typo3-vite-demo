@@ -1,4 +1,9 @@
+import FullReload from 'vite-plugin-full-reload';
+
 export default {
+  plugins: [
+    FullReload(['packages/typo3_vite_demo/Resources/Private/Templates/**/*.html', 'packages/typo3_vite_demo/Resources/Private/Partials/**/*.html'])
+  ],
   server: { 
     origin: '',
   },
