@@ -9,7 +9,7 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 
 ## Prerequisites
 
-- Docker Desktop
+- Docker Desktop or Colima
 - DDEV
 
 
@@ -19,8 +19,7 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 	cd typo3-vite-demo
 	ddev start
 	ddev composer install
-	ddev snapshot restore
-	ddev pnpm install
+	ddev snapshot restore --latest
 	
 Login via [https://typo3-vite-demo.ddev.site/typo3](https://typo3-vite-demo.ddev.site/typo3) using these credentials:
 
