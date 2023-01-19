@@ -1,0 +1,8 @@
+@use 'colors';
+
+/* Base */
+body {
+	font-family: system-ui;
+	background-color: colors.$background;
+	color: colors.$text;
+}

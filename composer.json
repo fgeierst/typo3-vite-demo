@@ -5,7 +5,8 @@
 	"config": {
 		"allow-plugins": {
 			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true
+			"typo3/cms-composer-installers": true,
+			"helhum/dotenv-connector": true
 		},
 		"platform": {
 			"php": "7.4.1"
@@ -20,6 +21,7 @@
 	],
 	"require": {
 		"florian-geierstanger/typo3-vite-demo": "^0.0.1",
+		"helhum/dotenv-connector": "^3.0",
 		"helhum/typo3-console": "^7.0.2",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
@@ -60,4 +62,3 @@
 		}
 	}
 }
-

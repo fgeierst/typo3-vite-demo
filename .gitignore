@@ -2,6 +2,7 @@ node_modules
 .pnpm-store
 .DS_Store
 .idea
+.env
 nbproject
 /var/*
 !/var/labels
@@ -17,4 +18,5 @@ nbproject
 # Exclude all extensions but locally added (all other extensions are loaded by composer)
 /public/typo3conf/ext/*
 
-packages/typo3_vite_demo/Resources/Public/JavaScript/
+packages/typo3_vite_demo/Resources/Public/manifest.json
+packages/typo3_vite_demo/Resources/Public/assets

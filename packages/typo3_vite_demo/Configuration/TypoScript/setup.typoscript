@@ -144,7 +144,7 @@ page {
     }
 
     includeCSS {
-        typo3_vite_demo_layout = EXT:typo3_vite_demo/Resources/Public/Css/layout.min.css
+
     }
 
     includeJSLibs {
@@ -160,7 +160,7 @@ page {
     }
 
     includeJSFooter {
-        #typo3_vite_demo_scripts = EXT:typo3_vite_demo/Resources/Public/JavaScript/Dist/scripts.js
+        
     }
 }
 
@@ -170,7 +170,7 @@ page {
         10 = TEXT
         10.value = <script type="module" src="https://typo3-vite-demo.ddev.site:5173/@vite/client"></script>
         20 = TEXT
-        20.value = <script type="module" src="https://typo3-vite-demo.ddev.site:5173/main.js"></script>
+        20.value = <script type="module" src="https://typo3-vite-demo.ddev.site:5173/packages/typo3_vite_demo/Resources/Private/JavaScript/main.js"></script>
     }
 [END]
 

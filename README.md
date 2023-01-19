@@ -3,6 +3,10 @@
 Integrate ViteJS build pipeline and development server with TYPO3.
 
 - https://florian.geierstanger.org/blog/typo3-vite
+  
+
+## Based on
+
 - https://github.com/torenware/ddev-viteserve
 - https://vitejs.dev/guide/backend-integration.html
 
@@ -28,13 +32,19 @@ Login via [https://typo3-vite-demo.ddev.site/typo3](https://typo3-vite-demo.ddev
 - Password: `oZim4R7eLEWzzL`
 
 
-## Control Vite dev server
+## Start Vite development server 
 
 	ddev vite-serve start|stop
 
 
-## Build JS and CSS
+## Test the production build
 
 	ddev pnpm build
 
-Set TYPO3_CONTEXT to 'Production/Staging' to test the production build of JS and CSS. See [setup.typoscript](https://github.com/fgeierst/typo3-vite-demo/blob/master/packages/typo3_vite_demo/Configuration/TypoScript/setup.typoscript#L177).
+Switch applicationContext to production in .env:
+
+	# Switch easily between Development/Local and Production/Live
+	# TYPO3_CONTEXT="Development/Local"
+	TYPO3_CONTEXT="Production/Live"
+
+See [setup.typoscript](https://github.com/fgeierst/typo3-vite-demo/blob/master/packages/typo3_vite_demo/Configuration/TypoScript/setup.typoscript#L177).

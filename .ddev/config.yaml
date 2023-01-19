@@ -15,9 +15,6 @@ nfs_mount_enabled: false
 mutagen_enabled: true
 use_dns_when_possible: true
 composer_version: "2"
-web_environment: 
-  - TYPO3_CONTEXT=Development/Local 
-# - TYPO3_CONTEXT=Production/Staging 
 nodejs_version: "16"
 
 # Key features of ddev's config.yaml:
