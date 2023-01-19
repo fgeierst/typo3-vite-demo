@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build", 
+    "build": "vite build",
     "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vite": "^3.0.4"
+    "vite": "^4.0.4"
   }
 }
