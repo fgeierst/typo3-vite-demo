@@ -9,8 +9,9 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 
 ## Prerequisites
 
-- Docker Desktop or Colima
-- DDEV
+- [Docker Desktop or Colima](https://ddev.readthedocs.io/en/latest/users/install/docker-installation/)
+- [DDEV](https://ddev.readthedocs.io/en/latest/)
+- [Mutagen](https://ddev.readthedocs.io/en/latest/users/install/performance/#mutagen) needs to be enabled for HMR
 
 
 ## Local installation guide
