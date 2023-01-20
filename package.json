@@ -2,6 +2,9 @@
   "name": "typo3-vite-demo",
   "version": "1.0.0",
   "author": "Florian Geierstanger",
+  "engines": {
+    "node": "^18"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
