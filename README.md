@@ -23,6 +23,7 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 	git clone https://github.com/fgeierst/typo3-vite-demo.git
 	cd typo3-vite-demo
 	ddev start
+	ddev exec cp .env.example .env
 	ddev composer install
 	ddev snapshot restore --latest
 	
