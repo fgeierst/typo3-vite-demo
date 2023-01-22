@@ -9,7 +9,7 @@
 			"helhum/dotenv-connector": true
 		},
 		"platform": {
-			"php": "7.4.1"
+			"php": "8.1"
 		},
 		"sort-packages": true
 	},
