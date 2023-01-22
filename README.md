@@ -1,8 +1,7 @@
 # TYPO3 Vite Demo
 
-Integrate ViteJS build pipeline and development server with TYPO3.
-
-- https://florian.geierstanger.org/blog/typo3-vite
+This project demonstrates how to integrate [Vite](https://vitejs.dev/) with with [TYPO3](https://github.com/TYPO3/typo3) both as an optimized CSS/JS build pipeline and a fast local development server. This setup enables Hot Module Reloading, out-of-the-box TypeScript support, SCSS compilation, PostCSS and especially [Vite's plugins](https://github.com/vitejs/awesome-vite#plugins) for Vue, Svelte, React, Preact and Solid.
+Watch the demo video at https://florian.geierstanger.org/blog/typo3-vite
   
 
 ## Based on
@@ -27,25 +26,29 @@ Integrate ViteJS build pipeline and development server with TYPO3.
 	ddev composer install
 	ddev snapshot restore --latest
 	
-Login via [https://typo3-vite-demo.ddev.site/typo3](https://typo3-vite-demo.ddev.site/typo3) using these credentials:
+Login via [typo3-vite-demo.ddev.site/typo3](https://typo3-vite-demo.ddev.site/typo3) using these credentials:
 
 - Username: `admin`
 - Password: `oZim4R7eLEWzzL`
 
 
-## Start Vite development server 
+## Vite development server 
+
+The development server is already running in the background (started by `ddev start`). You can control it with
 
 	ddev vite-serve start|stop
+
+Running `ddev pnpm dev` does the same, but shows Vite's output in the terminal - which is helpful for debugging.
 
 
 ## Test the production build
 
 	ddev pnpm build
 
-Switch applicationContext to production in .env:
+Switch applicationContext to production in .env
 
-	# Switch easily between Development/Local and Production/Live
 	# TYPO3_CONTEXT="Development/Local"
+	# TYPO3_CONTEXT="Production/Staging"
 	TYPO3_CONTEXT="Production/Live"
 
-See [setup.typoscript](https://github.com/fgeierst/typo3-vite-demo/blob/master/packages/typo3_vite_demo/Configuration/TypoScript/setup.typoscript#L177).
+See [setup.typoscript](https://github.com/fgeierst/typo3-vite-demo/blob/master/packages/typo3_vite_demo/Configuration/TypoScript/setup.typoscript#L177)
