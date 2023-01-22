@@ -1,13 +1,14 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
 
 
 ################
 #### HELPER ####
 ################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3_vite_demo/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+@import 'EXT:typo3_vite_demo/Configuration/TypoScript/Helper/DynamicContent.typoscript'
 
 
 ##############
@@ -16,7 +17,7 @@
 page = PAGE
 page {
     typeNum = 0
-    shortcutIcon = EXT:typo3_vite_demo/Resources/Public/Icons/favicon.ico
+    shortcutIcon = EXT:typo3_vite_demo/Resources/Public/Icons/favicon.svg
 
     10 = FLUIDTEMPLATE
     10 {
