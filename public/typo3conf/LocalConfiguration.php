@@ -112,6 +112,6 @@ return [
             'unifiedPageTranslationHandling' => true,
             'yamlImportsFollowDeclarationOrder' => true,
         ],
-        'sitename' => 'New TYPO3 site',
+        'sitename' => 'TYPO3 Vite Demo',
     ],
 ];
