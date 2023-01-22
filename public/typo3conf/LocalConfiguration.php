@@ -3,6 +3,7 @@ return [
     'BE' => [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$dVh2Wng4S1YuMlRQVy5aSg$Erxk01rQYZ52LYLG7IKhUaZFWGinO0V3rtjDAuCHuBw',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -111,6 +112,6 @@ return [
             'unifiedPageTranslationHandling' => true,
             'yamlImportsFollowDeclarationOrder' => true,
         ],
-        'sitename' => 'New TYPO3 site',
+        'sitename' => 'TYPO3 Vite Demo',
     ],
 ];
