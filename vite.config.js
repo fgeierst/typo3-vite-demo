@@ -1,23 +1,24 @@
+import { defineConfig } from 'vite';
 import FullReload from 'vite-plugin-full-reload';
+import vue from '@vitejs/plugin-vue';
 
-export default {
+export default defineConfig({
   plugins: [
-    FullReload(['packages/typo3_vite_demo/Resources/Private/Templates/**/*.html', 'packages/typo3_vite_demo/Resources/Private/Partials/**/*.html'])
+    FullReload(['packages/typo3_vite_demo/Resources/Private/Templates/**/*.html', 'packages/typo3_vite_demo/Resources/Private/Partials/**/*.html']),
+    vue(),
   ],
-  server: { 
+  server: {
     origin: '',
   },
   publicDir: false, // disable copy `public/` to outDir
   build: {
     rollupOptions: {
-      // overwrite default .html entry
-      input: 'packages/typo3_vite_demo/Resources/Private/JavaScript/main.js',
-    },
-    // generate manifest.json in outDir
-    manifest: true,
-    outDir: 'packages/typo3_vite_demo/Resources/Public/',
+      input: 'packages/typo3_vite_demo/Resources/Private/JavaScript/main.js', // overwrite default .html entry
+    },   
+    manifest: true, // generate manifest.json in outDir
+    outDir: 'packages/typo3_vite_demo/Resources/Public/Vite/', // ⚠️ `pnpm build` purges outDir
   },
   css: {
-    devSourcemap: true,
+    devSourcemap: true, // disabled by default because of performance reasons
   }
-}
+})

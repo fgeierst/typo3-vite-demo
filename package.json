@@ -6,13 +6,15 @@
     "node": "^18"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5173 --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
     "sass": "^1.57.1",
     "vite": "^4.0.4",
-    "vite-plugin-full-reload": "^1.0.5"
+    "vite-plugin-full-reload": "^1.0.5",
+    "vue": "^3.2.45"
   }
 }
