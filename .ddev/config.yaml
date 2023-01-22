@@ -16,9 +16,13 @@ mutagen_enabled: true
 use_dns_when_possible: true
 composer_version: "2"
 nodejs_version: "18"
+#web_environment: 
+# - TYPO3_CONTEXT=Development/Local 
+# - TYPO3_CONTEXT=Production/Staging 
 hooks:
     post-start:
         - exec: .ddev/commands/web/vite-serve
+          
 # Key features of ddev's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides
