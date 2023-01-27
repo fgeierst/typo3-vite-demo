@@ -1,9 +1,15 @@
 <f:layout name="Default" />
 <f:section name="Main">
 
-    <div data-container="vue" data-component="Counter"></div>
-    <div data-container="vue" data-component="Greeting"></div>
-    
     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+    
+    <div data-container="vue" data-component="Counter"></div>
+
+    <div 
+        data-container="vue" data-component="Greeting"
+        data-prop-message="Hello from Fluid Template"
+        data-prop-age="7"
+    >
+    </div>
 
 </f:section>

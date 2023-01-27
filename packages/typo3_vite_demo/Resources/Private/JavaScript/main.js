@@ -1,8 +1,8 @@
 import 'vite/modulepreload-polyfill';
 import '../Scss/main.scss';
 import { createApp } from 'vue'
-import Counter from './Components/Counter.vue';
-import Greeting from './Components/Greeting.vue';
+import MyCounter from './Components/MyCounter.vue';
+import MyGreeting from './Components/MyGreeting.vue';
 
 document.addEventListener('DOMContentLoaded', () => {
 	const containerElements = document.querySelectorAll('[data-container="vue"]');
@@ -10,11 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		const component = element.getAttribute('data-component');
 		switch (component) {
 			case 'Counter': {
-				createApp(Counter).mount(element);
+				createApp(MyCounter).mount(element);
 				break;
 			}
 			case 'Greeting': {
-				createApp(Greeting).mount(element);
+				const message = element.dataset.propMessage;
+				const age = Number(element.dataset.propAge);
+				createApp(MyGreeting,
+					{
+						message: message,
+						age: age,
+					}
+				).mount(element);
 				break;
 			}
 		}
