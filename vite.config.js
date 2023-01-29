@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
-import FullReload from 'vite-plugin-full-reload';
+import ViteFluid from "./vite.fluid.js";
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [
-    FullReload(['packages/typo3_vite_demo/Resources/Private/Templates/**/*.html', 'packages/typo3_vite_demo/Resources/Private/Partials/**/*.html']),
+    ViteFluid(),
     vue(),
   ],
   server: {
