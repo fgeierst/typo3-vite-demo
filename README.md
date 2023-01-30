@@ -41,6 +41,12 @@ The development server is already running in the background (started by `ddev st
 
 Running `ddev pnpm dev` does the same, but shows Vite's output in the terminal - which is helpful for debugging.
 
+### File watcher 
+
+All files that are imported by the main entry point [main.js](https://github.com/fgeierst/typo3-vite-demo/blob/c746ce69dbd42b626c93280f642dc7bb9d7ab973/packages/typo3_vite_demo/Resources/Private/JavaScript/main.js) are watched and trigger a Hot Module Replacement. 
+
+Additionally a [custom Vite plugin](https://github.com/fgeierst/typo3-vite-demo/blob/master/vite.fluid.js) does a full page reload whenever .html, .php, .typoscript or .yaml files are changed.
+
 
 ## Test the production build
 
