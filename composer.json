@@ -1,6 +1,6 @@
 {
 	"name": "typo3/cms-base-distribution",
-	"description" : "TYPO3 CMS Base Distribution",
+	"description": "TYPO3 CMS Base Distribution",
 	"license": "GPL-2.0-or-later",
 	"config": {
 		"allow-plugins": {
@@ -48,7 +48,7 @@
 		"typo3/cms-tstemplate": "^11.5.0",
 		"typo3/cms-viewpage": "^11.5.0"
 	},
-	"scripts":{
+	"scripts": {
 		"typo3-cms-scripts": [
 			"typo3cms install:fixfolderstructure"
 		],

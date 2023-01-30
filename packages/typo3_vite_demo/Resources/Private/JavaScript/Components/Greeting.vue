@@ -1,9 +1,9 @@
 <script setup>
-  const name = 'Vue';
+const name = 'Vue';
 </script>
 
 <template>
-	Hello {{ name }}!
+  Hello {{ name }}!
 </template>
 
 <style>

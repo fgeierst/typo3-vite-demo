@@ -14,7 +14,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: 'packages/typo3_vite_demo/Resources/Private/JavaScript/main.js', // overwrite default .html entry
-    },   
+    },
     manifest: true, // generate manifest.json in outDir
     outDir: 'packages/typo3_vite_demo/Resources/Public/Vite/', // ⚠️ `pnpm build` purges outDir
   },
