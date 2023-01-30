@@ -161,7 +161,7 @@ page {
     }
 
     includeJSFooter {
-        
+
     }
 }
 
@@ -175,12 +175,14 @@ page {
     }
 [END]
 
-# In production mode read the hashed JS and CSS file names from Vite generated manifest.json.
-[applicationContext == "Production/Staging"]
-    page.headerData { 
-        10 = USER_INT
-        10 {
-            userFunc = FlorianGeierstanger\Typo3ViteDemo\UserFunctions\InsertViteAssets->getScriptTags
+# In production mode load JS and CSS files from Vite production build
+[like(applicationContext, "Production*")]
+    page {
+        includeCSS {
+            main = EXT:typo3_vite_demo/Resources/Public/main.css
+        }
+        includeJSFooter {
+            main = EXT:typo3_vite_demo/Resources/Public/main.js
         }
     }
 [END]
