@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite';
-import ViteFluid from "./vite.fluid.js";
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [
-    ViteFluid(),
     vue(),
   ],
   server: {
