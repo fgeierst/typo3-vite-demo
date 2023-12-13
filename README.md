@@ -4,6 +4,9 @@ This project demonstrates how to integrate [Vite](https://vitejs.dev/) with with
 
 Watch a demo video at https://florian.geierstanger.org/blog/typo3-vite
 
+## New TYPO3 extension
+
+- Update 2023-12-13: This repo was an initial exploration that lead to https://github.com/s2b/vite-asset-collector
 
 ## Based on
 
